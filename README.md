@@ -12,6 +12,6 @@ You may obtain a copy of the License at
 
     http://www.apache.org/licenses/LICENSE-2.0
 
-Repo for BrainParc: UniSurf: Universal Lifespan Cortical Surface Reconstruction
+Repo for UniSurf: Universal Lifespan Cortical Surface Reconstruction
 Contact: lianzf2024@shanghaitech.edu.cn
 ```
