@@ -1,6 +1,8 @@
 # UniSurf
 UniSurf: Universal Lifespan Cortical Surface Reconstruction
 
+# The code and models are currently being organized and will be uploaded in the near future.
+
 
 ## [<font color=#F8B48F size=3>License</font> ](./LICENSE)
 ```shell
