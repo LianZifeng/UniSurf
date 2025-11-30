@@ -3,7 +3,9 @@ We introduce UniSurf, a universal end-to-end deep learning framework designed fo
 
 ***
 # Model overview
-
+<div style="text-align: center">
+  <img src="figures/overview.tif" width="100%" alt="UniSurf Framework">
+</div>
 ***
 
 # [<font color=#F8B48F size=3>License</font> ](./LICENSE)
