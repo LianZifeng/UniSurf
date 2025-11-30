@@ -1,7 +1,12 @@
 # UniSurf: Universal Lifespan Cortical Surface Reconstruction
 
 
-## [<font color=#F8B48F size=3>License</font> ](./LICENSE)
+***
+# Model overview
+
+***
+
+# [<font color=#F8B48F size=3>License</font> ](./LICENSE)
 ```shell
 Copyright IDEA Lab, School of Biomedical Engineering, ShanghaiTech University, Shanghai, China.
 
