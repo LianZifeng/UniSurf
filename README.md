@@ -9,14 +9,18 @@ We introduce UniSurf, a universal end-to-end deep learning framework designed fo
 
 # Results
 <div style="text-align: center">
-  <img src="figures/wm_surface.png" width="100%" alt="Results of WM surface">
+  <img src="figures/wm_results.png" width="100%" alt="Results of WM surface">
 </div>
 
 <div style="text-align: center">
-  <img src="figures/pial_surface.png" width="100%" alt="Results of pial surface">
+  <img src="figures/pial_results.png" width="100%" alt="Results of pial surface">
 </div>
 
 ***
+
+# Citation
+If you find this work useful in your research, please cite:
+> Zifeng Lian, Jiameng Liu, Jiawei Huang, Shijie Huang, Xiaoye Li, Han Zhang, Zhiming Cui, Feng Shi, Dinggang Shen. UniSurf: Universal Lifespan Cortical Surface Reconstruction. (Under Review)
 
 # [<font color=#F8B48F size=3>License</font> ](./LICENSE)
 ```shell
