@@ -20,7 +20,7 @@ We introduce UniSurf, a universal end-to-end deep learning framework designed fo
 
 # Citation
 If you find this work useful in your research, please cite:
-> Zifeng Lian, Jiameng Liu, Jiawei Huang, Shijie Huang, Xiaoye Li, Han Zhang, Zhiming Cui, Feng Shi, Dinggang Shen. UniSurf: Universal Lifespan Cortical Surface Reconstruction. (Under Review)
+> **Zifeng Lian<sup>†</sup>, Jiameng Liu<sup>†</sup>, Jiawei Huang, Shijie Huang, Xiaoye Li, Han Zhang, Zhiming Cui, Feng Shi, Dinggang Shen<sup>*</sup>. UniSurf: Universal Lifespan Cortical Surface Reconstruction. (Under Review)**
 
 # [<font color=#F8B48F size=3>License</font> ](./LICENSE)
 ```shell
