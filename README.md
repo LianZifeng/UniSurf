@@ -2,12 +2,12 @@
 We introduce UniSurf, a universal end-to-end deep learning framework designed for cortical surface reconstruction across the entire human lifespan (0-100 years). UniSurf jointly optimizes tissue segmentation and cortical surface reconstruction using a differentiable iso-surface extraction algorithm.
 
 ***
-# Model overview
+## Model overview
 <div style="text-align: center">
   <img src="figures/overview.png" width="100%" alt="UniSurf Framework">
 </div>
 
-# Results
+## Results
 <div style="text-align: center">
   <img src="figures/wm_results.png" width="100%" alt="Results of WM surface">
 </div>
