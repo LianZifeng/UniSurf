@@ -18,8 +18,14 @@ We introduce UniSurf, a universal end-to-end deep learning framework designed fo
 
 ***
 
+***
 # Get started
-## Step 1:
+## Step 1: Data Preparation
+
+## Step 2: Data Prepocessing
+
+## Step 3: Model Training
+***
 
 # Citation
 If you find this work useful in your research, please cite:
