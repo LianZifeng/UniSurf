@@ -39,13 +39,17 @@ data/
 ```
 
 ## Step 2: Data Prepocessing
-To generate pseudo-SDF GT for model pre-training, you can run the following first:
+To generate SDF for model pre-training, you can run the following first:
 ```bash
-python seg2sdf.py --data_path='./data/'
+python seg2sdf.py --data_path='/your/path/to/data'
 ```
 
 ## Step 3: Model Training
-
+For training of UniSurf model, please run:
+```bash
+python train.py --data_path='/your/path/to/data' --excel_path='/your/path/to/data/list' --surf_hemi='left' --n_epochs=100 --output_dir='/your/path/to/save/models'
+```
+and you can uncomment the code to decide which model to train.
 
 ***
 
