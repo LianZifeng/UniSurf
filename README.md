@@ -22,7 +22,25 @@ We introduce UniSurf, a universal end-to-end deep learning framework designed fo
 # Get started
 ## Step 1: Data Preparation
 Organize your project directory as follows to reproduce UniSurf on your own data
-
+```bash
+data/
+├── subject001/
+│   ├── brain.nii.gz            # brain image
+│   ├── edge.nii.gz             # sobel edge
+│   ├── lh.nii.hz               # left tissue map GT
+│   ├── rh.nii.gz               # right tissue map GT
+│   ├── lh.white.SDF.nii.gz     # left wm surface pseudo-SDF GT
+│   ├── rh.white.SDF.nii.gz     # right wm surface pseudo-SDF GT
+│   ├── lh.pial.SDF.nii.gz      # left pial surface pseudo-SDF GT
+│   ├── rh.pial.SDF.nii.gz      # right pial surface pseudo-SDF GT
+│   ├── lh.white                # left wm surface GT
+│   ├── rh.white                # right wm surface GT
+│   ├── lh.pial                 # left pial surface GT
+│   └── rh.pial                 # right pial surface GT
+├── subject002 
+├── subject003
+└── ……
+```
 
 ## Step 2: Data Prepocessing
 
