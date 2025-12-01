@@ -29,10 +29,6 @@ data/
 │   ├── edge.nii.gz             # sobel edge
 │   ├── lh.nii.hz               # left tissue map GT
 │   ├── rh.nii.gz               # right tissue map GT
-│   ├── lh.white.SDF.nii.gz     # left wm surface pseudo-SDF GT
-│   ├── rh.white.SDF.nii.gz     # right wm surface pseudo-SDF GT
-│   ├── lh.pial.SDF.nii.gz      # left pial surface pseudo-SDF GT
-│   ├── rh.pial.SDF.nii.gz      # right pial surface pseudo-SDF GT
 │   ├── lh.white                # left wm surface GT
 │   ├── rh.white                # right wm surface GT
 │   ├── lh.pial                 # left pial surface GT
@@ -43,8 +39,14 @@ data/
 ```
 
 ## Step 2: Data Prepocessing
+To generate pseudo-SDF GT for model pre-training, you can run the following first:
+```bash
+python seg2sdf.py --data_path='./data/'
+```
 
 ## Step 3: Model Training
+
+
 ***
 
 # Citation
