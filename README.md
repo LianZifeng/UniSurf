@@ -21,6 +21,8 @@ We introduce UniSurf, a universal end-to-end deep learning framework designed fo
 ***
 # Get started
 ## Step 1: Data Preparation
+Organize your project directory as follows to reproduce UniSurf on your own data
+
 
 ## Step 2: Data Prepocessing
 
