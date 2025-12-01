@@ -57,12 +57,16 @@ def multiProcessing(file):
 
 
 if __name__ == '__main__':
+    import argparse
     from tqdm import tqdm
     from multiprocessing import Pool
 
-    path = '/your/folder/path'
+    parser = argparse.ArgumentParser(description='Calulate SDF from tissue map')
+    parser.add_argument('--data_path', type=str, default='/your/folder/path', help='Input path')
+
+    args = parser.parse_args()
 
     # Generate pseudo-SDF GT for pretraining
-    files = [os.path.join(path, f) for f in os.listdir(path)]
+    files = [os.path.join(args.path, f) for f in os.listdir(args.path)]
     with Pool(processes=32) as pool:
         results = list(tqdm(pool.imap_unordered(multiProcessing, files), total=len(files), desc="Processing"))
