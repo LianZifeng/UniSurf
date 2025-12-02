@@ -16,10 +16,8 @@ from pytorch3d.structures import Meshes
 from pytorch3d.ops import sample_points_from_meshes
 from pytorch3d.loss import chamfer_distance, mesh_edge_loss, mesh_normal_consistency
 import nibabel as nib
-from seg2surf import topo_correct
 
 
-# Using the pseudo-SDF GT for pretraining
 def PretrainSDF(config):
     train_dataset = LoadDataset(data_path=config.train_path, excel_path=config.excel_path, surf_hemi=config.surf_hemi)
     train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True, num_workers=config.num_workers)
@@ -400,7 +398,6 @@ def TrainPial(config):
 
             outer_SDF = nib.load(os.path.join(SDF_path, ID + '.nii.gz')).get_fdata()
             outer_SDF = outer_SDF[:128, :, :]
-            outer_SDF = topo_correct.apply(outer_SDF, threshold=5)
             outer_SDF = np.clip(outer_SDF, a_min=-5, a_max=5)
             outer_SDF = torch.tensor(outer_SDF, dtype=torch.float32, device='cuda').unsqueeze(0).unsqueeze(0)
             inner_v, inner_f = nib.freesurfer.read_geometry(os.path.join(WM_path, ID + ".white"))
@@ -459,7 +456,6 @@ def TrainPial(config):
 
                     outer_SDF = nib.load(os.path.join(SDF_path, ID + '.nii.gz')).get_fdata()
                     outer_SDF = outer_SDF[:128, :, :]
-                    outer_SDF = topo_correct.apply(outer_SDF, threshold=5)
                     outer_SDF = np.clip(outer_SDF, a_min=-5, a_max=5)
                     outer_SDF = torch.tensor(outer_SDF, dtype=torch.float32, device='cuda').unsqueeze(0).unsqueeze(0)
                     inner_v, inner_f = nib.freesurfer.read_geometry(os.path.join(WM_path, ID + ".white"))
@@ -505,4 +501,5 @@ if __name__ == '__main__':
     PretrainSDF(config)
     PretrainPial(config)
     # TrainSDF(config)
+
     # TrainPial(config)
