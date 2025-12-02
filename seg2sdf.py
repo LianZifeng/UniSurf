@@ -66,7 +66,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    # Generate pseudo-SDF GT for pretraining
     files = [os.path.join(args.path, f) for f in os.listdir(args.path)]
     with Pool(processes=32) as pool:
+
         results = list(tqdm(pool.imap_unordered(multiProcessing, files), total=len(files), desc="Processing"))
