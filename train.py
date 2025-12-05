@@ -82,7 +82,6 @@ def PretrainSDF(config):
         print(f"Saved model with best training loss: {best_loss:.6f}")
 
 
-# Using the pseudo-SDF and surface GT for pretraining
 def PretrainPial(config):
     train_dataset = LoadDataset(data_path=config.train_path, excel_path=config.excel_path, surf_hemi=config.surf_hemi)
     train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True, num_workers=config.num_workers)
@@ -503,3 +502,4 @@ if __name__ == '__main__':
     # TrainSDF(config)
 
     # TrainPial(config)
+
