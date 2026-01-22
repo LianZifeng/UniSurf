@@ -40,9 +40,9 @@ def Inference(config):
     Pialmodel = PialNet(config.nc, config.K, config.n_scale).cuda()
 
     # load weights
-    Segmodel.load_state_dict(torch.load(os.path.join(config.model_path, 'Segmentation.pth')))
-    SDFmodel.load_state_dict(torch.load(os.path.join(config.model_path, 'LSDF.pth')))
-    Pialmodel.load_state_dict(torch.load(os.path.join(config.model_path, 'LPialSurface.pth')))
+    Segmodel.load_state_dict(torch.load(os.path.join(config.model_path, 'UniSurf_Segmentation.pth')))
+    SDFmodel.load_state_dict(torch.load(os.path.join(config.model_path, 'UniSurf_LSDF.pth')))
+    Pialmodel.load_state_dict(torch.load(os.path.join(config.model_path, 'UniSurf_LPialSurface.pth')))
     Pialmodel.initialize(128, 256, 192)
 
     Segmodel.eval()
@@ -217,5 +217,6 @@ if __name__ == '__main__':
     parser.add_argument('--model_path', default=r"/your/model/weights/path", type=str, help='path to model weights')
 
     config = parser.parse_args()
+
 
     Inference(config)
