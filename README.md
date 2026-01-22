@@ -9,7 +9,7 @@ We propose UniSurf, a universal deep learning framework that jointly performs br
 
 ## Installation
 To ensure a clean workspace and prevent dependency conflicts, we strongly recommend creating a new Conda environment before running the code.
-## 1. Create and Activate Environment
+### Create and Activate Environment
 ```bash
 # Create a new conda environment named 'unisurf' with Python 3.9
 conda create -n unisurf python=3.9 -y
