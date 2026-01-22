@@ -27,3 +27,19 @@ You can download our provided sample model weights for left hemisphere white mat
 
 ### 1.Data preparation
 We provide a set of example samples in [Sample](./Sample) and a default data list in [test.xlsx](./test.xlsx), allowing you to run inference immediately using our provided model weights. The data structure is organized as follows:
+```bash
+test.xlsx
+Sample/
+├── sub00000/
+│   ├── brain.nii.gz  # T1-weighted image
+│   ├── edge.nii.gz   # sobel edge map for T1-weighted image
+│   ├── lh.nii.gz     # left hemisphere ground-truth tissue map
+│   ├── rh.nii.gz     # right hemisphere ground-truth tissue map
+│   ├── lh.white      # left hemisphere ground-truth white matter surface
+│   ├── rh.white      # right hemisphere ground-truth white matter surface
+│   ├── lh.pial       # left hemisphere ground-truth pial surface
+│   ├── rh.pial       # right hemisphere ground-truth pial surface
+├── sub00001/
+├── sub00002/
+└── ……
+```
