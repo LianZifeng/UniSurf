@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 ## Inference
 ### 1. Download model weights
-You can download our provided sample model weights for left hemisphere white matter surface reconstruction through the following links: [UniSurf_Segmentation](https://drive.google.com/file/d/1xOLOaiXPEvqx75T4JudGT5Q-n9SqAOtx/view?usp=drive_link) for tissue segmentation, [UniSurf_LSDF](https://drive.google.com/file/d/1ec_d-w4uXCLfK4dQDQQNc4CGOKqq-EpU/view?usp=drive_link) for SDFs prediction and [UniSurf_LPial](https://drive.google.com/file/d/1uH-uFUp1kC172kKIcS0DnPrNGtcPac17/view?usp=drive_link) for pial surface reconstruction.
+You can download our provided sample model weights for left hemisphere white matter surface reconstruction through the following links: [UniSurf_Segmentation](https://drive.google.com/file/d/1xOLOaiXPEvqx75T4JudGT5Q-n9SqAOtx/view?usp=drive_link) for tissue segmentation, [UniSurf_LSDF](https://drive.google.com/file/d/1ec_d-w4uXCLfK4dQDQQNc4CGOKqq-EpU/view?usp=drive_link) for SDFs prediction and [UniSurf_LPialSurface](https://drive.google.com/file/d/1uH-uFUp1kC172kKIcS0DnPrNGtcPac17/view?usp=drive_link) for pial surface reconstruction.
 
 ### 2. Data preparation
 We provide a set of example samples in [Sample](./Sample) and a default data list in [test.xlsx](./test.xlsx), allowing you to run inference immediately using our provided model weights. The data structure is organized as follows:
