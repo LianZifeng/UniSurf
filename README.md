@@ -63,3 +63,9 @@ sbatch GPU.sh
 ## Citation
 If you find this work useful in your research, please cite:
 > **Zifeng Lian<sup>†</sup>, Jiameng Liu<sup>†</sup>, Jiawei Huang, Shijie Huang, Xiaoye Li, Han Zhang, Zhiming Cui, Feng Shi, Dinggang Shen<sup>&ast;</sup>. UniSurf: Universal Lifespan Cortical Surface Reconstruction. (Under Review)**
+
+***
+
+## License
+Contact: lianzf2024@shanghaitech.edu.cn
+See [LICENSE](./LICENSE)
