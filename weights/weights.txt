@@ -1,0 +1,3 @@
+Place the model weights in this directory.
+
+To run the inference code, please download the sample weights from our Google Drive and save them to this folder (./weights/).
