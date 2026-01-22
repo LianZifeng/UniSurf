@@ -4,4 +4,19 @@ We propose UniSurf, a universal deep learning framework that jointly performs br
 <div style="text-align: center">
   <img src="figure/framework.png" width="100%" alt="UniSurf framework">
 </div>
+
 ***
+
+## Installation
+To ensure a clean workspace and prevent dependency conflicts, we strongly recommend creating a new Conda environment before running the code.
+## 1. Create and Activate Environment
+```bash
+# Create a new conda environment named 'unisurf' with Python 3.9
+conda create -n unisurf python=3.9 -y
+
+# Activate the environment
+conda activate unisurf
+
+# Install the required libraries
+pip install -r requirements.txt
+```
