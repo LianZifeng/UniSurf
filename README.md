@@ -40,7 +40,6 @@ Sample/
 │   ├── lh.pial       # left hemisphere ground-truth pial surface
 │   ├── rh.pial       # right hemisphere ground-truth pial surface
 ├── sub00001/
-├── sub00002/
 └── ……
 ```
 
