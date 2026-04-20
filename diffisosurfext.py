@@ -232,8 +232,11 @@ def trainer(config):
                 loss.backward()
                 print(f"epoch {epoch + 1}/{config.epochs} batch {ID}/{idx+1}/{len(train_loader)} took {time.time()-batch_start_time:.2f}s, l2_loss={loss.item():.6f}, lr={current_lr:.8f}")
             else:
+                # Differentiable isosurface extraction
+                # Forward using the Marching Cubes
                 v_mc, f_mc = MC(output)
 
+                # Backward using custom backpropagation
                 v_0 = torch.tensor(v_mc, dtype=torch.float32, requires_grad=True, device='cuda')
                 f_0 = torch.tensor(f_mc, dtype=torch.long, requires_grad = False, device='cuda')
 
